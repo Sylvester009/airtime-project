@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata = {
@@ -34,9 +35,9 @@ export default function RootLayout({
               molestiae quo veritatis ullam corrupti commodi doloremque
             </p>
             <div className="button-div">
-              <a href="form.html" title="button" className="download-button">
+              <Link href="/form" title="button" className="download-button">
                 Buy Airtime
-              </a>
+              </Link>
 
               <button type="button" title="button" className="ques-button">
                 What is it?
@@ -61,9 +62,9 @@ export default function RootLayout({
               </p>
 
               <div className="button-div">
-                <a href="form.html" title="button" className="download-button">
+                <Link href="/form" title="button" className="download-button">
                   Buy Airtime
-                </a>
+                </Link>
                 <button type="button" title="button" className="ques-button">
                   What is it?
                 </button>

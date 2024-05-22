@@ -209,6 +209,7 @@ footer {
   width: 100%;
   text-align: center;
   margin: 5% auto 0;
+  /*background-image: url("Meet-Image/image-footer.jpg");*/
   background: var(--deepblue);
   color: var(--White);
   padding: 8% 10% 9%;
