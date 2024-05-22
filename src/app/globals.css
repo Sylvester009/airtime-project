@@ -113,7 +113,7 @@ button {
 
 .ques-button {
   background-color: var(--deeppurple);
-  width: 15rem;
+  width: 20rem;
   margin: 0 auto;
 }
 
@@ -225,11 +225,11 @@ footer {
 }
 
 /* Style for the Buy Airtime button */
-.download-button {
+.download-button,
+.ques-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--deepblue);
   color: var(--White);
   border: none;
   border-radius: 30px;
@@ -239,10 +239,6 @@ footer {
   text-decoration: none; /* Remove underline from anchor element */
   cursor: pointer;
   text-align: center;
-}
-
-.download-button:hover {
-  background-color: var(--lightblue);
 }
 
 #countryList {

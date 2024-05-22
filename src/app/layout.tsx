@@ -39,9 +39,9 @@ export default function RootLayout({
                 Buy Airtime
               </Link>
 
-              <button type="button" title="button" className="ques-button">
+              <Link href="/" title="button" className="ques-button">
                 What is it?
-              </button>
+              </Link>
             </div>
           </div>
         </header>
@@ -65,9 +65,9 @@ export default function RootLayout({
                 <Link href="/form" title="button" className="download-button">
                   Buy Airtime
                 </Link>
-                <button type="button" title="button" className="ques-button">
+                <Link href="/" title="button" className="ques-button">
                   What is it?
-                </button>
+                </Link>
               </div>
             </div>
             <img
