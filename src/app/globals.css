@@ -171,6 +171,7 @@ button {
 main {
   padding: 5% 5% 0%;
   display: inline-grid;
+  margin: 0 auto;
 }
 
 .img-section {

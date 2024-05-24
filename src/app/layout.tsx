@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "/Meet-Image/logo.svg";
 import "./globals.css";
 
 export const metadata = {
@@ -15,15 +17,15 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header className="header mobile-header">
-          <img src="Meet-Image/logo.svg" alt="meet logo" className="logo" />
+          <img src="/Meet-Image/logo.svg" alt="meet logo" className="logo" />
           <div className="people-div">
             <img
-              src="Meet-Image/image-hero-left.png"
+              src="/Meet-Image/image-hero-left.png"
               alt="people"
               className="people-left"
             />
             <img
-              src="Meet-Image/image-hero-right.png"
+              src="/Meet-Image/image-hero-right.png"
               alt="people"
               className="people-right"
             />
@@ -47,10 +49,10 @@ export default function RootLayout({
         </header>
 
         <header className="header desktop-header">
-          <img src="Meet-Image/logo.svg" alt="meet logo" className="logo" />
+          <img src="/Meet-Image/logo.svg" alt="meet logo" className="logo" />
           <div className="people-div">
             <img
-              src="Meet-Image/image-hero-left.png"
+              src="/Meet-Image/image-hero-left.png"
               alt="people"
               className="people-left"
             />
@@ -71,7 +73,7 @@ export default function RootLayout({
               </div>
             </div>
             <img
-              src="Meet-Image/image-hero-right.png"
+              src="/Meet-Image/image-hero-right.png"
               alt="people"
               className="people-right"
             />
