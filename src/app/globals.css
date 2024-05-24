@@ -299,8 +299,17 @@ label {
 }
 
 input[type="tel"],
-input[type="number"],
-select {
+input[type="number"] {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  border: 1px solid var(--darkgray);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#countrySelect,
+#provider {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
