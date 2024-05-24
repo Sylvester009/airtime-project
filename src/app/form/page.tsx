@@ -1,8 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
 
+type Country = {
+  cca3: string;
+  name: {
+    common: string;
+  };
+};
+
 export default function Form() {
-  const [countries, setCountries] = useState([]);
+  const [countries, setCountries] = useState<Country[]>([]);
   const [country, setCountry] = useState("");
   const [numberDisabled, setNumberDisabled] = useState(true);
   const [amountDisabled, setAmountDisabled] = useState(true);
@@ -11,7 +18,7 @@ export default function Form() {
     // Fetch list of countries
     fetch("https://restcountries.com/v3.1/all")
       .then((response) => response.json())
-      .then((data) => {
+      .then((data: Country[]) => {
         const sortedCountries = data.sort((a, b) =>
           a.name.common.localeCompare(b.name.common)
         );
@@ -50,7 +57,12 @@ export default function Form() {
           </div>
           <div className="form-group">
             <label htmlFor="number">Phone Number:</label>
-            <input type="tel" id="number" name="number" disabled={numberDisabled} />
+            <input
+              type="tel"
+              id="number"
+              name="number"
+              disabled={numberDisabled}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="provider">Service Provider:</label>
@@ -64,7 +76,12 @@ export default function Form() {
           </div>
           <div className="form-group">
             <label htmlFor="amount">Amount:</label>
-            <input type="number" id="amount" name="amount" disabled={amountDisabled} />
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+              disabled={amountDisabled}
+            />
           </div>
           <button type="submit">Purchase</button>
         </form>
