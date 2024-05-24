@@ -19,7 +19,7 @@ export default function Form() {
     fetch("https://restcountries.com/v3.1/all")
       .then((response) => response.json())
       .then((data: Country[]) => {
-        const sortedCountries = data.sort((a, b) =>
+        const sortedCountries = data.sort((a: Country, b: Country) =>
           a.name.common.localeCompare(b.name.common)
         );
         setCountries(sortedCountries);
